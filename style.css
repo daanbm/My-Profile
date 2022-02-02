@@ -69,17 +69,12 @@ h1, h2, h3 {
 
 p {
   font-weight: bold;
+  color: rgb(64, 66, 64);
 }
 a {
-  color:rgb(56, 41, 41);
+  color: rgb(64, 66, 64);
   text-decoration: none;
   font-size: 15px;
-}
-
-a:hover{
-  font-size: 16px;
-  font-weight:bolder;
-  color: orangered;
 }
 
 .list-inline > li {
@@ -93,13 +88,56 @@ a:hover{
   padding-left: 0px;
 }
 
-#btn-green {
+.btn-green {
   background-color: rgb(116, 160, 116);
   color: ivory;
   padding: 10px;
   border-radius: 5px;
   font-weight: bolder;
 }
+
+#popup {
+  display: none;
+}
+
+/* #challenge:hover {
+  display: none;
+} */
+
+#challenge:hover + #popup {
+  cursor: pointer;
+  display: block;
+  /*visibility: visible; */
+  width: 225px;
+  line-height: 10px;
+  padding: 2px;
+  font-size: 14px;
+  text-align: center;
+  z-index: 999;
+  color: rgb(113, 157, 171);
+  background: rgb(255, 255, 255);
+  border: 4px solid rgb(255, 255, 255);
+  border-radius: 5px;
+  text-shadow: rgba(0, 0, 0, 0.0980392) 1px 1px 1px;
+  box-shadow: #333 -4px 4px 16px 2px;
+  -webkit-transition: opacity 100ms ease-in;
+  -o-transition: opacity 100ms ease-in;
+  -moz-transition: opacity 100ms ease-in;
+  transition: opacity 100ms ease-in;
+  pointer-events: none;
+}
+
+
+.btn-green:hover {
+  background-color: orangered;
+  font-size:20px;
+  box-shadow: #333 2px 4px 16px 2px;
+}
+
+#challenge:hover {
+  box-shadow: #333 0px -2px 16px 2px;
+}
+
 
 #header-p {
   padding-bottom: 10px;
@@ -110,7 +148,9 @@ a:hover{
 }
 
 .icon:hover {
-  font-size:30px
+  font-size:30px;
+  color: orangered;
+  font-weight:bolder;
 }
  #footer {
    padding-top: 10px;
